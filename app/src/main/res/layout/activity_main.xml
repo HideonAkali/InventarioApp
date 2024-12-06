@@ -102,11 +102,22 @@
             android:padding="8dp"
             android:scrollbars="vertical" />
 
-        <!-- Contenedor de Botones -->
+        <!-- Botón "Agregar por Voz" -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/voiceAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar por Voz"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white" />
+
+        <!-- Contenedor de Botones CRUD -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/addProductButton"
@@ -139,15 +150,7 @@
                 android:text="Error al cargar datos"
                 android:textColor="@color/errorColor"
                 android:visibility="gone" />
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/voiceAddButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Agregar por Voz"
-                android:layout_marginTop="16dp"
-                app:backgroundTint="@color/primaryColor"
-                android:textColor="@android:color/white" />
-
         </LinearLayout>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
